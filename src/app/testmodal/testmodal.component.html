@@ -1,0 +1,27 @@
+<!-- <div style="background-color: aqua;">
+<h1>Modal Content</h1>
+<p>This is the content of the modal.</p>
+<div>
+    <label for="attribute1">Attribute 1:</label>
+    <input type="text" id="attribute1"><br>
+    <label for="attribute2">Attribute 2:</label>
+    <input type="text" id="attribute2"><br>
+    <label for="attribute3">Attribute 3:</label>
+    <input type="text" id="attribute3"><br>
+</div>
+<button mat-button [mat-dialog-close]="true">Close</button>
+</div> -->
+<div class="modal-container">
+    <h1 class="modal-title">Modal Content</h1>
+    <p class="modal-description">This is the content of the modal.</p>
+    <div class="attribute-container">
+      <label for="attribute1" class="attribute-label">Attribute 1:</label>
+      <input type="text" id="attribute1" class="attribute-input">
+      <label for="attribute2" class="attribute-label">Attribute 2:</label>
+      <input type="text" id="attribute2" class="attribute-input">
+      <label for="attribute3" class="attribute-label">Attribute 3:</label>
+      <input type="text" id="attribute3" class="attribute-input">
+    </div>
+    <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+  </div>
+  
