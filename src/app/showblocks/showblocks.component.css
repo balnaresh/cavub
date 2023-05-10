@@ -98,3 +98,32 @@ border: none;
 border-radius: 4px;
 cursor: pointer;
 }
+
+
+
+/* block-list.component.css */
+
+.table-container {
+    overflow-x: auto;
+    max-height: 400px; /* Adjust the value as needed */
+  }
+  
+  .block-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .block-table th,
+  .block-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  .block-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .block-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

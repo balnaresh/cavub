@@ -11,7 +11,7 @@
 </div>
 <button mat-button [mat-dialog-close]="true">Close</button>
 </div> -->
-<div class="modal-container">
+<!-- <div class="modal-container">
     <h1 class="modal-title">Modal Content</h1>
     <p class="modal-description">This is the content of the modal.</p>
     <div class="attribute-container">
@@ -23,5 +23,26 @@
       <input type="text" id="attribute3" class="attribute-input">
     </div>
     <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
-  </div>
+  </div> -->
+
+<div class="modal-container">
+    <h1 class="modal-title">Modal Content</h1>
+    <p class="modal-description">This is the content of the modal.</p>
+    <div class="attribute-container">
+      <div class="attribute-pair">
+        <label for="attribute1" class="attribute-label">Attribute 1:</label>
+        <input type="text" id="attribute1" class="attribute-input">
+      </div>
+      <div class="attribute-pair">
+        <label for="attribute2" class="attribute-label">Attribute 2:</label>
+        <input type="text" id="attribute2" class="attribute-input">
+      </div>
+      <div class="attribute-pair">
+        <label for="attribute3" class="attribute-label">Attribute 3:</label>
+        <input type="text" id="attribute3" class="attribute-input">
+      </div>
+    </div>
+    <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+    <button style="background-color: blue;margin-left: 10px;" class="modal-close-button" mat-button >Submit</button>
+</div>
   

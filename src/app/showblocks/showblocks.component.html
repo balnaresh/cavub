@@ -1,0 +1,43 @@
+<div class="modal-container">
+    <h1 class="modal-title">Modal Content</h1>
+    <p class="modal-description">This is the content of the modal.</p>
+    <!-- <div class="attribute-container">
+      <div class="attribute-pair">
+        <label for="attribute1" class="attribute-label">Attribute 1:</label>
+        <input type="text" id="attribute1" class="attribute-input">
+      </div>
+    </div> -->
+    <!-- block-list.component.html -->
+
+    <div class="table-container">
+        <table class="block-table">
+            <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Parent Name</th>
+                <th>Registered Number</th>
+                <th>Issued Date</th>
+                <th>Stream</th>
+                <th>Degree</th>
+                <th>Institution</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let block of blocks">
+                <td>{{ block.index }}</td>
+                <td>{{ block.data?.name }}</td>
+                <td>{{ block.data?.parentName }}</td>
+                <td>{{ block.data?.registeredNumber }}</td>
+                <td>{{ block.data?.issuedDate }}</td>
+                <td>{{ block.data?.stream }}</td>
+                <td>{{ block.data?.degree }}</td>
+                <td>{{ block.data?.institution }}</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+  
+    <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+</div>
+  

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { TestmodalComponent } from './testmodal/testmodal.component';
-
-
-let showBalNaresh: boolean=false;
+import { ShowblocksComponent } from './showblocks/showblocks.component';
+import { MineCertComponent } from './mine-cert/mine-cert.component';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +16,13 @@ export class AppComponent {
   openModelBalNaresh(){
     this.dialog.open(TestmodalComponent);
   }
+
+  showAllBlocks(){
+    this.dialog.open(ShowblocksComponent);
+  }
+
+  showMineCertificate(){
+    this.dialog.open(MineCertComponent);
+  }
+
 }

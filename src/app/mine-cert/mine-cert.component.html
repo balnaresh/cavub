@@ -1,0 +1,56 @@
+<div class="modal-container">
+    <h1 class="modal-title" style="text-align: center;">Modal Content</h1>
+    <p class="modal-description" style="text-align: center;">This is the content of the modal.</p>
+    <div class="form-container">
+        <form>
+          <div class="form-group">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-input" [(ngModel)]="name" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="parentName" class="form-label">Parent Name:</label>
+            <input type="text" id="parentName" name="parentName" class="form-input" [(ngModel)]="parentName" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="registeredNumber" class="form-label">Registered Number:</label>
+            <input type="text" id="registeredNumber" name="registeredNumber" class="form-input" [(ngModel)]="registeredNumber" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="issuedDate" class="form-label">Issued Date:</label>
+            <input type="text" id="issuedDate" name="issuedDate" class="form-input" [(ngModel)]="issuedDate" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="stream" class="form-label">Stream:</label>
+            <input type="text" id="stream" name="stream" class="form-input" [(ngModel)]="stream" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="degree" class="form-label">Degree:</label>
+            <input type="text" id="degree" name="degree" class="form-input" [(ngModel)]="degree" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="institution" class="form-label">Institution:</label>
+            <input type="text" id="institution" name="institution" class="form-input" [(ngModel)]="institution" required>
+          </div>
+    
+        </form>
+      </div>
+      <div class="attribute-container" *ngIf="!showbefore">
+        <div class="attribute-pair">
+          <label for="attribute1" class="attribute-label">HashCode:</label>
+          <p>{{hashCode}}</p>
+        </div>
+      </div>
+  
+    <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+    <button (onclick)="mineCertificate()" style="background-color: blue;margin-left: 10px;" class="modal-close-button" mat-button >Submit</button>
+
+</div>
+
+  
+  
