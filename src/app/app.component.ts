@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { TestmodalComponent } from './testmodal/testmodal.component';
 import { ShowblocksComponent } from './showblocks/showblocks.component';
 import { MineCertComponent } from './mine-cert/mine-cert.component';
+import { SearchHashComponent } from './search-hash/search-hash.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,10 @@ export class AppComponent {
 
   showMineCertificate(){
     this.dialog.open(MineCertComponent);
+  }
+
+  searchHash(){
+    this.dialog.open(SearchHashComponent);
   }
 
 }

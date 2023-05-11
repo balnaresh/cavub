@@ -1,0 +1,51 @@
+<div class="modal-container">
+    <h1 class="modal-title" style="text-align: center;">Modal Content</h1>
+    <p class="modal-description" style="text-align: center;">This is the content of the modal.</p>
+    <div class="form-container"  *ngIf="showbefore">
+      <form>
+        <div class="form-group">
+          <label for="name" class="form-label">HashCode:</label>
+          <input type="text" id="hashCode" name="hashCode" class="form-input" [(ngModel)]="hashCode" required>
+        </div>
+      </form>
+    </div>
+    <div class="attribute-container" *ngIf="!showbefore">
+        <div *ngIf="!showbefore">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td id="name">{{name}}</td>
+                </tr>
+                <tr>
+                    <th>Parent Name</th>
+                    <td id="parentName">{{parentName}}</td>
+                </tr>
+                <tr>
+                    <th>Registered Number</th>
+                    <td id="registeredNumber">{{registeredNumber}}</td>
+                </tr>
+                <tr>
+                    <th>Issued Date</th>
+                    <td id="issuedDate">{{issuedDate}}</td>
+                </tr>
+                <tr>
+                    <th>Stream</th>
+                    <td id="stream">{{stream}}</td>
+                </tr>
+                <tr>
+                    <th>Degree</th>
+                    <td id="degree">{{degree}}</td>
+                </tr>
+                <tr>
+                    <th>Institution</th>
+                    <td id="institution">{{institution}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="text-align: center;">
+      <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+      <button (click)="searchHash()" style="background-color: blue;margin-left: 10px;" class="modal-close-button"
+        mat-button>Submit</button>
+    </div>
+  </div>

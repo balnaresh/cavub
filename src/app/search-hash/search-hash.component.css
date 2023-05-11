@@ -1,0 +1,70 @@
+
+.modal-container {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.modal-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.attribute-container {
+    margin-bottom: 10px;
+}
+
+.attribute-pair {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.attribute-label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right; /* Align <th> tags to the right */
+}
+
+.attribute-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left; /* Align <td> tags to the left */
+}
+
+.modal-close-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #0b0909; /* Add border to table cells */
+    text-align: left; /* Align cell content to the left */
+}
+
+th {
+    text-align: right; /* Align <th> tags to the right */
+}

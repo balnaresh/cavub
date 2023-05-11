@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestmodalComponent } from './testmodal/testmodal.component';
 import { ShowblocksComponent } from './showblocks/showblocks.component';
 import { MineCertComponent } from './mine-cert/mine-cert.component';
+import { SearchHashComponent } from './search-hash/search-hash.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestmodalComponent,
     ShowblocksComponent,
-    MineCertComponent
+    MineCertComponent,
+    SearchHashComponent
   ],
   imports: [
     BrowserModule,
