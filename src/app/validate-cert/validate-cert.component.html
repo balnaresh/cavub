@@ -1,0 +1,49 @@
+<div class="modal-container">
+    <div *ngIf="showbefore && showbefore2">
+        <form class="upload-form" (submit)="onSubmit()">
+            <label for="fileInput" class="file-label">Select a PDF file:</label>
+            <input id="fileInput" type="file" (change)="onFileSelected($event)" class="file-input" />
+            <!-- <input bind:files class="form-control form-control-lg" id="file" type="file" accept="application/pdf" required> -->
+            <button type="submit" style="background-color: blue;" class="upload-button">Upload</button>
+        </form>
+    </div>
+    <div class="attribute-container" *ngIf="!showbefore">
+        <div *ngIf="!showbefore">
+            <p>The Certificate Validation is Successful</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td id="name">{{alldata.name}}</td>
+                </tr>
+                <tr>
+                    <th>Registered Number</th>
+                    <td id="registeredNumber">{{alldata.registeredNumber}}</td>
+                </tr>
+                <tr>
+                    <th>Issued Date</th>
+                    <td id="issuedDate">{{alldata.issuedDate}}</td>
+                </tr>
+                <tr>
+                    <th>Stream</th>
+                    <td id="stream">{{alldata.stream}}</td>
+                </tr>
+                <tr>
+                    <th>Degree</th>
+                    <td id="degree">{{alldata.degree}}</td>
+                </tr>
+                <tr>
+                    <th>Institution</th>
+                    <td id="institution">{{alldata.institution}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="attribute-container" *ngIf="!showbefore2">
+        <div *ngIf="!showbefore2">
+            <p>The Certificate is Validation is Failed</p>
+        </div>
+    </div>
+    <div>
+        <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+    </div>
+</div>

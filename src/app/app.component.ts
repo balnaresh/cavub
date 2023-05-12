@@ -4,6 +4,7 @@ import { TestmodalComponent } from './testmodal/testmodal.component';
 import { ShowblocksComponent } from './showblocks/showblocks.component';
 import { MineCertComponent } from './mine-cert/mine-cert.component';
 import { SearchHashComponent } from './search-hash/search-hash.component';
+import { ValidateCertComponent } from './validate-cert/validate-cert.component';
 
 @Component({
   selector: 'app-root',
@@ -28,6 +29,10 @@ export class AppComponent {
 
   searchHash(){
     this.dialog.open(SearchHashComponent);
+  }
+
+  validateCert(){
+    this.dialog.open(ValidateCertComponent);
   }
 
 }
