@@ -13,6 +13,7 @@ import { MineCertComponent } from './mine-cert/mine-cert.component';
 import { SearchHashComponent } from './search-hash/search-hash.component';
 import { ValidateCertComponent } from './validate-cert/validate-cert.component';
 import { SearchBcComponent } from './search-bc/search-bc.component';
+import { SearchbycatComponent } from './searchbycat/searchbycat.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SearchBcComponent } from './search-bc/search-bc.component';
     MineCertComponent,
     SearchHashComponent,
     ValidateCertComponent,
-    SearchBcComponent
+    SearchBcComponent,
+    SearchbycatComponent
   ],
   imports: [
     BrowserModule,

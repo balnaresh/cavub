@@ -6,6 +6,7 @@ import { MineCertComponent } from './mine-cert/mine-cert.component';
 import { SearchHashComponent } from './search-hash/search-hash.component';
 import { ValidateCertComponent } from './validate-cert/validate-cert.component';
 import { SearchBcComponent } from './search-bc/search-bc.component';
+import { SearchbycatComponent } from './searchbycat/searchbycat.component';
 
 @Component({
   selector: 'app-root',
@@ -39,5 +40,7 @@ export class AppComponent {
   searchBC(){
     this.dialog.open(SearchBcComponent);
   }
-
+  searchbycat(){
+    this.dialog.open(SearchbycatComponent);
+  }
 }
