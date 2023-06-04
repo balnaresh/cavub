@@ -30,4 +30,10 @@ export class ApiService {
     const headers= new HttpHeaders().set('Api_key', '123456').set('content-type', 'application/json').set('Access-Control-Allow-Origin','*');
     return this.http.post('http://127.0.0.1:8000/api/validate',{'headers': headers});
   }
+
+  apiSearchBc(formData: any): Observable<any>{
+    const headers= new HttpHeaders().set('Api_key', '123456').set('content-type', 'application/json').set('Access-Control-Allow-Origin','*');
+    
+    return this.http.post('http://127.0.0.1:8000/api/search',formData,{'headers': headers});
+  } 
 }

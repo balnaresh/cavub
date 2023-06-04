@@ -12,6 +12,7 @@ import { ShowblocksComponent } from './showblocks/showblocks.component';
 import { MineCertComponent } from './mine-cert/mine-cert.component';
 import { SearchHashComponent } from './search-hash/search-hash.component';
 import { ValidateCertComponent } from './validate-cert/validate-cert.component';
+import { SearchBcComponent } from './search-bc/search-bc.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ValidateCertComponent } from './validate-cert/validate-cert.component';
     ShowblocksComponent,
     MineCertComponent,
     SearchHashComponent,
-    ValidateCertComponent
+    ValidateCertComponent,
+    SearchBcComponent
   ],
   imports: [
     BrowserModule,

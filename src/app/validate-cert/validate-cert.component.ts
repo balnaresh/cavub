@@ -65,6 +65,8 @@ export class ValidateCertComponent {
         this.alldata=this.myData.data;
         if(this.alldata){
           this.showbefore=false;
+        }else{
+          this.showbefore2=false;
         }
         }
       })

@@ -48,82 +48,78 @@ cursor: pointer;
 
 
 .modal-container {
-  background-color: aqua;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
 }
 
 .modal-title {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .modal-description {
-  color: #555;
-  font-size: 16px;
-  margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .attribute-container {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .attribute-pair {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .attribute-label {
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 10px;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 .attribute-input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .modal-close-button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-
-
-/* block-list.component.css */
-
 .table-container {
-  overflow-x: auto;
-  max-height: 400px;
-  /* Adjust the value as needed */
+    overflow-x: auto;
+    max-height: 400px;
+    /* Adjust the value as needed */
 }
 
 .block-table {
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .block-table th,
 .block-table td {
-  border: 1px solid #dddddd;
-  padding: 8px;
+    border: 1px solid #dddddd;
+    padding: 8px;
 }
 
 .block-table th {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 .block-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }

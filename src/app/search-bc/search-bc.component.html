@@ -1,0 +1,47 @@
+<div class="modal-container">
+    <h1 class="modal-title">Modal Content</h1>
+    <p class="modal-description">This is the content of the modal.</p>
+    <!-- <div class="attribute-container">
+      <div class="attribute-pair">
+        <label for="attribute1" class="attribute-label">Attribute 1:</label>
+        <input type="text" id="attribute1" class="attribute-input">
+      </div>
+    </div> -->
+    <!-- block-list.component.html -->
+    <div *ngIf="!showafter">
+        <div class="form-group">
+            <label for="query" class="form-label">Query:</label>
+            <input type="text" id="query" name="query" class="form-input" [(ngModel)]="query" required>
+        </div>
+        <button (click)="searchBc()" style="background-color: blue;margin-left: 10px;" class="modal-close-button" mat-button>Submit</button>
+    </div>
+
+    <div class="table-container" *ngIf="showafter">
+        <table class="block-table">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Registered Number</th>
+                    <th>Issued Date</th>
+                    <th>Stream</th>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let block of blocks; let i = index">
+                    <td>{{ i+1 }}</td>
+                    <td>{{ block.name }}</td>
+                    <td>{{ block.registeredNumber }}</td>
+                    <td>{{ block.issuedDate }}</td>
+                    <td>{{ block.stream }}</td>
+                    <td>{{ block.degree }}</td>
+                    <td>{{ block.institution }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+</div>
