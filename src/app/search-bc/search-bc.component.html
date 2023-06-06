@@ -1,4 +1,4 @@
-<div class="modal-container">
+<!-- <div class="modal-container">
     <h1 class="modal-title">Search in BC</h1>
     <p class="modal-description">Enter any attribute value to search</p>
     <!-- <div class="attribute-container">
@@ -8,7 +8,7 @@
       </div>
     </div> -->
     <!-- block-list.component.html -->
-    <div *ngIf="!showafter">
+    <!--<div *ngIf="!showafter">
         <div class="form-group">
             <label for="query" class="form-label">Query:</label>
             <input type="text" id="query" name="query" class="form-input" [(ngModel)]="query" required>
@@ -44,4 +44,54 @@
     </div>
 
     <button class="modal-close-button" mat-button [mat-dialog-close]="true">Close</button>
+</div> -->
+
+
+<div class="modal-container">
+    <h1 class="modal-title" style="text-align: center;">Search in BC</h1>
+    <p class="modal-description" style="text-align: center;">Enter any attribute value to search</p>
+    <!-- <div class="attribute-container">
+      <div class="attribute-pair">
+        <label for="attribute1" class="attribute-label">Attribute 1:</label>
+        <input type="text" id="attribute1" class="attribute-input">
+      </div>
+    </div> -->
+    <!-- block-list.component.html -->
+    <div *ngIf="!showafter" style="text-align: center;">
+        <div class="form-group">
+            <label for="query" class="form-label">Query:</label>
+            <input type="text" id="query" name="query" class="form-input" [(ngModel)]="query" required>
+        </div>
+        <button (click)="searchBc()" style="background-color: blue; margin-left: 10px;" class="modal-close-button" mat-button>Submit</button>
+    </div>
+
+    <div class="table-container" *ngIf="showafter">
+        <table class="block-table">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Index</th>
+                    <th style="text-align: center;">Name</th>
+                    <th style="text-align: center;">Registered Number</th>
+                    <th style="text-align: center;">Issued Date</th>
+                    <th style="text-align: center;">Stream</th>
+                    <th style="text-align: center;">Degree</th>
+                    <th style="text-align: center;">Institution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let block of blocks; let i = index">
+                    <td style="text-align: center;">{{ i+1 }}</td>
+                    <td style="text-align: center;">{{ block.name }}</td>
+                    <td style="text-align: center;">{{ block.registeredNumber }}</td>
+                    <td style="text-align: center;">{{ block.issuedDate }}</td>
+                    <td style="text-align: center;">{{ block.stream }}</td>
+                    <td style="text-align: center;">{{ block.degree }}</td>
+                    <td style="text-align: center;">{{ block.institution }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="text-align: center;">
+        <button class="modal-close-button" mat-button [mat-dialog-close]="true" style="margin-left: 10px">Close</button>
+    </div>
 </div>
